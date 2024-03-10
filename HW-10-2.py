@@ -44,7 +44,7 @@ plt.show()
 # Генерація випадкових точок в межах інтегрування
 num_points = 100000
 random_x = np.random.uniform(a, b, num_points)
-random_y = f(random_x)
+random_y = np.random.uniform(0, f(b), num_points)
 
 # Підрахунок кількості точок, які знаходяться під кривою
 points_under_curve = sum(random_y <= f(random_x))
